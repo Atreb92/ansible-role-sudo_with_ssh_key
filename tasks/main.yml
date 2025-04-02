@@ -1,0 +1,20 @@
+---
+# tasks file for ansible-role-sudo-ssh-key
+- name: Installing required software
+  apt:
+    state: present
+    update_cache: "{{ update_apt_cache }}"
+    name: libpam-ssh-agent-auth
+
+- name: Configuring /etc/pam.d/sudo 
+  lineinfile:
+    path: /etc/pam.d/sudo
+    state: present
+    line: "auth sufficient pam_ssh_agent_auth.so file={{ authorized_key_file_path }}"
+    insertafter: "#%PAM-1.0"
+
+- name: Configuring sudoers 
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    line: 'Defaults env_keep += "SSH_AUTH_SOCK"'

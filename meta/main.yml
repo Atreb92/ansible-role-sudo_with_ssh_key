@@ -1,0 +1,18 @@
+galaxy_info:
+  author: atreb92
+  description: Enables sudo passwordless using ssh keys contained in ssh-agent
+  company: your company (optional) .
+  license: license (MIT, BSD)
+  min_ansible_version: 2.1
+  platforms:
+    - name: Ubuntu
+      versions:
+        - noble # Tested
+  # - name: Fedora
+  #   versions:
+  #   - all
+  #   - 25
+  galaxy_tags: 
+    - sudo
+    - ssh
+    - passwordless
