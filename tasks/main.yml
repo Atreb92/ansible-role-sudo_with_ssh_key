@@ -1,5 +1,5 @@
 ---
-# tasks file for ansible-role-sudo-ssh-key
+# tasks file for ansible-role-sudo_with_ssh_key
 - name: Installing required software
   apt:
     state: present

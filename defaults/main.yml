@@ -1,4 +1,4 @@
 ---
-# defaults file for ansible-role-sudo-ssh-key
+# defaults file for ansible-role-sudo_with_ssh_key
 authorized_key_file_path: /etc/ssh/sudo_authorized_keys
 update_apt_cache: true

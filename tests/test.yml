@@ -2,4 +2,4 @@
 - hosts: localhost
   remote_user: root
   roles:
-    - ansible-role-sudo-ssh-key
+    - ansible-role-sudo_with_ssh_key

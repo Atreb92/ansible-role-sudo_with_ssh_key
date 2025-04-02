@@ -1,2 +1,2 @@
 ---
-# vars file for ansible-role-sudo-ssh-key
+# vars file for ansible-role-sudo_with_ssh_key
